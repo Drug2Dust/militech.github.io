@@ -1,7 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+    <meta charset="UTF-8">
+    <title>Сайт-визитка</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+    <header>
+        <h1>Приветствую, Я программист на Java и 1С программист</h1>
+    </header>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Опишите ваш опыт и навыки.</p>
+    </section>
+
+    <section id="projects">
+		<h2>Мои проекты на Java  </h2>
+		<div class="project">
+			<h3 onclick="toggleDetails('project1')">SenderModerTG ▼</h3>
+			<div class="project-details" id="project1">
+				<p>Задача данного бота заключается в парсинге и копировании данных, отправка контента в телеграмм каналы(чаты),модерирование чатов,выгрузка статистики по телеграм каналам в виде подписчиков</p>
+				<p>Использованные библиотеки:Jsoup,Apache Poi,Jogl</p>
+				<p>Главное меню</p>
+				<img src="Pic/MainMenu.PNG" >
+				<p>Пример выгрузки данных</p>
+				<img src="Pic/Statistics.jpg">
+				
+			</div>
+		</div>
+
+		<div class="project">
+			<h3 onclick="toggleDetails('project2')">Название проекта 2 ▼</h3>
+			<div class="project-details" id="project2">
+				<p>Описание проекта 2: Какие технологии использовались, какие задачи решались.</p>
+			</div>
+		</div>
+	</section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <a href="https://t.me/RebootDelete" target="_blank" class="telegram-button">Написать в Telegram</a>
+    </section>
 </body>
 </html>

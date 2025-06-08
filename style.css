@@ -1,0 +1,53 @@
+/* Анимация появления секций */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Анимация при прокрутке */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Анимация кнопки Telegram */
+.telegram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.telegram-button:hover {
+    background-color: #005f87;
+    transform: scale(1.1);
+}
+.project h3 {
+    cursor: pointer;
+    color: #0088cc;
+    transition: color 0.3s;
+}
+
+.project h3:hover {
+    color: #005f87;
+}
+.project h2 {
+    cursor: pointer;
+    color: #0088cc;
+    transition: color 0.3s;
+}
+
+.project h2:hover {
+    color: #005f87;
+}
+.project-details {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
